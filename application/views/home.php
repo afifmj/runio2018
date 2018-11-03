@@ -36,7 +36,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#volunteer">How it works?</a></li>
                     <li><a href="#donate">Donate</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Users">Users</a></li> 
+                    <li><?php if ($this->session->logged_in) { ?><a href="<?php echo site_url('Users/logout'); ?>">Jobs for you</a><?php } ?></li>
                     <li><?php if (!$this->session->logged_in) { ?><a href="<?php echo site_url('home/login'); ?>">LOGIN/REGISTER</a><?php } ?></li>
                     <li><?php if ($this->session->logged_in) { ?><a href="<?php echo site_url('Users/logout'); ?>">Logout</a><?php } ?></li>
                 </ul>
@@ -62,14 +63,14 @@
             <h1>WORKS?</h1>
         </div>
         <div class="col-md-8">
-            <p></p>
+            <b>
+            <p>Venite functions as a social network for demonstrating the experience and thrill of volunteering. Bringing a reality to those who have little experience but want more. The badge system and work log format should even promote current volunteers to continue volunteering for increased incentives.</p>
+            <p>Our primary concern would be to implement our forum community. Engaging the volunteers or potential volunteers in conversation about past experiences or clarifying any uncertainties is a major goal for our project.</p>
+            <p>For security reasons we would be using blockchains because of their properties of immutability and transparency, as a secondary database for continous verification of records.
+            </p>
+        </b>
         </div>
     </div>
 </div>
-
-<div class="container" id="contact">
-    <h1>CONTACT</h1>
-</div>
-
 </body>
 </html>
