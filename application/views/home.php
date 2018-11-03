@@ -37,12 +37,19 @@
                     <li><a href="#volunteer">How it works?</a></li>
                     <li><a href="#donate">Donate</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="<?php echo site_url('home/login'); ?>">LOGIN/REGISTER</a></li>
+                    <li><?php if (!$this->session->logged_in) { ?><a href="<?php echo site_url('home/login'); ?>">LOGIN/REGISTER</a><?php } ?></li>
+                    <li><?php if ($this->session->logged_in) { ?><a href="<?php echo site_url('Users/logout'); ?>">Logout</a><?php } ?></li>
                 </ul>
             </div>
         </div>
 
     </nav>
+
+    <?php if ($this->session->logged_in) { ?>
+        <div class="logged_in">
+            <p style="text-align: center;">Welcome <?php echo $this->session->userdata('username'); ?>!</p>
+        </div>
+    <?php } ?>
 </div>
 </div>
 

@@ -9,13 +9,13 @@ class Users_model extends CI_Model {
 	}
 
     // signup form
-	/* public function sign_up($username, $email, $password){
-		$query = $this->db->query("INSERT INTO users (username, email, password, role) values ('$username', '$email', '$password', 'subscriber') ");
-	} */
+    public function sign_up($username, $email, $password){
+		$query = $this->db->query("INSERT INTO users (username, email, password, role) values ('$username', '$email', '$password', 0) ");
+	}
 
 	public function login_user($uname, $psw) {
 		$username = $uname;
-		$password = $psw;
+		$password = $psw  ;
 		$this->db->select('*');
 		$this->db->where('username', $username);
 		$this->db->where('password', $password);

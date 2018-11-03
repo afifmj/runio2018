@@ -142,3 +142,9 @@ button:hover {
 form .container {
   width: 80%;
 }
+
+.logged_in {
+    padding-top: 70px;
+    font-size: 17px;
+    letter-spacing: 5px;
+}
