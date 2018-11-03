@@ -1,10 +1,79 @@
-/* Login page */
-
-.login {
-    padding: 50px;
-    text-align: center;
+/* Home page */
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
-button {
-    
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* Navbar */
+.bg .navbar {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    transition: all 0.3s;
+}
+
+.bg .navbar a {
+    color: #ffffff;
+}
+
+.navbar a {
+    color: black !important;
+}
+
+.navbar a:hover {
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+.navbar.compressed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    color: black !important;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.compressed a {
+    color: black !important;
+}
+
+/* bg image */
+.bg {
+    background-image: url('../images/bg1.jpg');
+    height: 100%;
+    margin-top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#volunteer {
+    padding: 40px 0px;
+}
+
+#heading {
+    letter-spacing: 11px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
 }

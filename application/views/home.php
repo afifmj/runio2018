@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS JS links -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-    <!-- <script type = 'text/javascript' src = "js/init.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/css/style.css'); ?>">
+    <script type = 'text/javascript' src = "<?php echo site_url('assets/js/init.js') ?>"></script>
+    <script type = 'text/javascript' src = "<?php echo site_url('assets/js/nav.js') ?>"></script>
 </head>
 <body>
 
+<div class="bg">
 <div class="container">
     <nav class="navbar navbar-fixed-top">
 
@@ -32,15 +34,31 @@
 
             <div class="collapse navbar-collapse" id="navcomponents">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
                     <li><a href="#volunteer">How it works?</a></li>
                     <li><a href="#donate">Donate</a></li>
                     <li><a href="<?php echo site_url('Main/contact') ?>">Contact</a></li>
+                    <li><a href="<?php ?>">Login</a></li>
+                    <li><a href="<?php ?>">Register</a></li>
                 </ul>
             </div>
         </div>
 
     </nav>
+</div>
+</div>
+
+<!-- How it works -->
+<div class="container" id="volunteer">
+    <div class="row">
+        <div class="col-md-4" id="heading">
+            <h1>HOW</h1>
+            <h1>IT</h1>
+            <h1>WORKS?</h1>
+        </div>
+        <div class="col-md-8">
+            <p></p>
+        </div>
+    </div>
 </div>
 
 </body>
