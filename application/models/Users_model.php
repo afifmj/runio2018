@@ -28,6 +28,11 @@ class Users_model extends CI_Model {
 		}
 	}
 
+    public function get_all_users() {
+        $query = $this->db->query('SELECT * FROM users WHERE role=0 ORDER BY username DESC;');
+		return $query->result_array();
+    }
+
 }
 
 ?>

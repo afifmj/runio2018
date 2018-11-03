@@ -17,4 +17,10 @@ class Home extends CI_Controller {
         $this->load->view('login');
     }
 
+    public function volunteers() {
+        $data['all_users'] = $this->Users_model->get_all_users();
+
+        $this->load->view('volunteers', $data);
+    }
+
 }

@@ -36,7 +36,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#volunteer">How it works?</a></li>
                     <li><a href="#donate">Donate</a></li>
-                    <li><a href="#Users">Users</a></li> 
+                    <li><a href="<?php echo site_url('home/volunteers'); ?>">Volunteers</a></li> 
                     <li><?php if ($this->session->logged_in) { ?><a href="<?php echo site_url('Users/logout'); ?>">Jobs for you</a><?php } ?></li>
                     <li><?php if (!$this->session->logged_in) { ?><a href="<?php echo site_url('home/login'); ?>">LOGIN/REGISTER</a><?php } ?></li>
                     <li><?php if ($this->session->logged_in) { ?><a href="<?php echo site_url('Users/logout'); ?>">Logout</a><?php } ?></li>

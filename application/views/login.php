@@ -85,7 +85,6 @@
             <div class="forms">
                 <form class="modal-content animate" action="<?php echo site_url('Users/login'); ?>" method="post" autocomplete="off">
     	            <div class="container">
-			        <hr>
                     <label for="username"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="username" required>
 
