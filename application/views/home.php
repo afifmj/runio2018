@@ -36,9 +36,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#volunteer">How it works?</a></li>
                     <li><a href="#donate">Donate</a></li>
-                    <li><a href="<?php echo site_url('Main/contact') ?>">Contact</a></li>
-                    <li><a href="<?php ?>">Login</a></li>
-                    <li><a href="<?php ?>">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="<?php echo site_url('home/login'); ?>">LOGIN/REGISTER</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +49,7 @@
 <!-- How it works -->
 <div class="container" id="volunteer">
     <div class="row">
-        <div class="col-md-4" id="heading">
+        <div class="col-md-4 heading">
             <h1>HOW</h1>
             <h1>IT</h1>
             <h1>WORKS?</h1>
@@ -59,6 +58,10 @@
             <p></p>
         </div>
     </div>
+</div>
+
+<div class="container" id="contact">
+    <h1>CONTACT</h1>
 </div>
 
 </body>

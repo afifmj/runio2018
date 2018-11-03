@@ -12,16 +12,6 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 /* Navbar */
-.bg .navbar {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    transition: all 0.3s;
-}
-
 .navbar {
     font-family: 'Roboto', sans-serif;
     padding-top: 25px;
@@ -30,6 +20,10 @@ body {
     color: black;
     border: none;
     transition: all 0.3s;
+}
+
+.navbar i {
+    color: black !important;
 }
 
 .bg .navbar a {
@@ -71,9 +65,80 @@ body {
     padding: 40px 0px;
 }
 
-#heading {
+.heading {
     letter-spacing: 11px;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
+}
+
+#lg {
+    margin-top: 100px;
+}
+
+/* Register form */
+.forms {
+  text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: Arial;
+}
+
+label {
+    text-align: left;
+    padding: 5px;
+}
+
+.forms input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+
+.forms button {
+    background-color: #5ba525;
+    color: #ffffff;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+button:visited {
+  color: inherit;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.signupbtn, .loginbtn {
+  padding: 14px 20px;
+  background-color: #32CD32;
+}
+
+.loginbtn {
+  width: 50%;
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+.signupbtn {
+  float: left;
+  width: 50%;
+  color: white;
+  border: none;
+  opacity: 0.9;
+}
+
+form .container {
+  width: 80%;
 }
