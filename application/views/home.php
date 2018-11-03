@@ -18,8 +18,29 @@
 </head>
 <body>
 
-<div>
-    <p>Hello World!</p>
+<div class="container">
+    <nav class="navbar navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcomponents" aria-expanded "false">
+                        <i class="glyphicon glyphicon-align-center"></i>
+                </button>
+
+            <a href="#" class="navbar-brand">VOLUNTEER FOR A CHANGE</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navcomponents">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#volunteer">How it works?</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="<?php echo site_url('Main/contact') ?>">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
 </div>
 
 </body>
