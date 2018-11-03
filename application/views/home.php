@@ -51,6 +51,13 @@
         </div>
     <?php } ?>
 </div>
+
+<div class="container">
+    <div class="heading venite">
+        <h1>VENITE</h1>
+    </div>
+</div>
+
 </div>
 
 <!-- How it works -->

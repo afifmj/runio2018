@@ -66,6 +66,9 @@
                         <label for="password"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="password" required>
 
+                        <label for="state"><b>Location</b></label>
+                        <input type="text" placeholder="Enter State" name="state" required><br>
+
                         <div class="clearfix">
                             <button type="submit" class="signupbtn"><b>Sign Up</b></button>
                         </div>
